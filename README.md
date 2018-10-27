@@ -17,4 +17,3 @@ http://mdecourse.github.io/2018fall/
 設定步驟: https://github.com/scrum-2/scrum-2.github.io/wiki
 
 cpgx 網站: https://cpgx.kmol.info
-小屁宣
