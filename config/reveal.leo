@@ -21,14 +21,14 @@
 <v t="leo.20180827201621.6" a="E"><vh>body</vh>
 <v t="leo.20180827201621.7" a="E"><vh>reveal div</vh>
 <v t="leo.20180827201621.8" a="E"><vh>slides div</vh>
-<v t="leo.20181105003816.1" a="E"><vh>封面投影片</vh>
-<v t="leo.20181105003816.2"><vh>封面投影片內容</vh></v>
+<v t="leo.20181105013733.1" a="E"><vh>封面投影片</vh>
+<v t="leo.20181105013733.2"><vh>封面投影片內容</vh></v>
 </v>
 <v t="leo.20180827201621.9" a="E"><vh>封面投影片</vh>
 <v t="leo.20180827201621.10"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20181105002505.1" a="E"><vh>快捷鍵</vh>
-<v t="leo.20181105002505.2"><vh>投影片快捷鍵</vh></v>
+<v t="leo.20181105013708.1" a="E"><vh>快捷鍵</vh>
+<v t="leo.20181105013708.2"><vh>投影片快捷鍵</vh></v>
 </v>
 <v t="leo.20180827201621.11" a="E"><vh>快捷鍵</vh>
 <v t="leo.20180827201621.12"><vh>投影片快捷鍵</vh></v>
@@ -332,7 +332,7 @@ make.start()
 
 						
 </t>
-<t tx="leo.20181105002505.1">&lt;section data-markdown&gt;
+<t tx="leo.20181105013708.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
     &lt;/script&gt;
@@ -341,7 +341,7 @@ make.start()
 
 						
 </t>
-<t tx="leo.20181105002505.2"># 投影片快捷鍵
+<t tx="leo.20181105013708.2"># 投影片快捷鍵
 
 * 利用箭頭上下前後換頁
 * 按 f 鍵進入全螢幕模式 (full screen)
@@ -351,7 +351,7 @@ make.start()
 * 按 Esc 可以退出全螢幕或全域檢視 (Escape)
 
 </t>
-<t tx="leo.20181105003816.1">&lt;section data-markdown&gt;
+<t tx="leo.20181105013733.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
     &lt;/script&gt;
@@ -360,7 +360,7 @@ make.start()
 
 						
 </t>
-<t tx="leo.20181105003816.2">## 2018Fall s40723201 網際簡報
+<t tx="leo.20181105013733.2">## 2018Fall  網際簡報
 
 ### 虎科大機械設計工程系
 
