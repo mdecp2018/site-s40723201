@@ -363,18 +363,11 @@ make.start()
 
 						
 </t>
-<t tx="leo.20181105013733.2">## 2018Fall   網際簡報
+<t tx="leo.20181105013733.2"># WEEK1
 
-### 虎科大機械設計工程系
+##
 
-&lt;small&gt;
-Created by [KMOLab](http://lab.kmol.info/)
-&lt;/small&gt;
-
-[2018 Fall 分組網誌](./../blog/index.html)
-
-
-</t>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/VLHqNCJkWUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20181105105641.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -388,6 +381,8 @@ Created by [KMOLab](http://lab.kmol.info/)
 
 [*CMsimfiy 操作](https://github.com/chiamingyen/cmsimfly)
 
-[*Onshape 操作](https://www.onshape.com)</t>
+[*Onshape 操作](https://www.onshape.com)
+
+</t>
 </tnodes>
 </leo_file>
