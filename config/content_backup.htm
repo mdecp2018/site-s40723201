@@ -78,7 +78,16 @@
 <li>按"Download Zoomit"下載程式</li>
 </ul>
 <p></p>
-<h2>WEEK3</h2>
+<p></p>
+<p></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">@app.route('/delete_file'.methods=['POST'])
+def delete_file():
+  """Dekete user uploaded files."""
+  if not isAdmin():
+      return redirect("/login")
+  head,level,page =parse_content()
+  directory =render_menu(head,level,page)</pre>
+<p></p><h2>WEEK3</h2>
 <ul>
 <ul>
 <li>利用cmd創立一個資料夾</li>
@@ -122,7 +131,19 @@
 </ul>
 <h2>WEEK6</h2>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/jf2gVmjz8_Y" width="560"></iframe></p><h2>WEEK7</h2>
-<h2>WEEK8</h2>
+<p style="text-align: center;"><strong>更改圖片圖框顏色</strong></p>
+<ul>
+<li style="text-align: left;">開啟遠端</li>
+<li style="text-align: left;">在圖片下面新增程式碼</li>
+</ul>
+<p><img alt="" height="158" src="/images/notepad_2018-11-06_23-57-38.png" width="458"/></p>
+<ul>
+<li style="text-align: left;">利用LEO 開啟 cmsimfy.leo</li>
+<li style="text-align: left;">下滑找到 syntaxhighlight 點選並滑到最下面新增程式碼</li>
+<li style="text-align: left;">最後一定要save 並 git push</li>
+</ul>
+<p></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/_hGc7rjQDnA" width="560"></iframe></p><h2>WEEK8</h2>
 <h1>組員操作影片</h1>
 <p>每週各分組組員必須將參與分組協同過程之電腦操作流程錄成影片後, 上傳至各自的 Youtube 帳號區, 並嵌入各分組網站頁面中.</p>
 <h2>老師示範</h2>
