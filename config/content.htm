@@ -78,7 +78,16 @@
 <li>按"Download Zoomit"下載程式</li>
 </ul>
 <p></p>
-<h2>WEEK3</h2>
+<p></p>
+<p></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">@app.route('/delete_file'.methods=['POST'])
+def delete_file():
+  """Dekete user uploaded files."""
+  if not isAdmin():
+      return redirect("/login")
+  head,level,page =parse_content()
+  directory =render_menu(head,level,page)</pre>
+<p></p><h2>WEEK3</h2>
 <ul>
 <ul>
 <li>利用cmd創立一個資料夾</li>

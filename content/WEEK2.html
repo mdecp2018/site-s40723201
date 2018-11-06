@@ -49,6 +49,11 @@ init_mathjax();
 <script src="https://scrum-3.github.io/web/brython/brython.js"></script>
 <script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
 -->
+<style>
+img {
+  border: 3px solid red:
+}
+</style>
 
 <script src="./../static/jquery.js"></script>
 <script type="text/javascript">
@@ -107,4 +112,13 @@ $(function(){
 <li>按"Download Zoomit"下載程式</li>
 </ul>
 <p></p>
-<br />WEEK1 << <a href='WEEK1.html'>Previous</a> <a href='WEEK3.html'>Next</a> >> WEEK3</section></div></body></html>
+<p></p>
+<p></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">@app.route('/delete_file'.methods=['POST'])
+def delete_file():
+  """Dekete user uploaded files."""
+  if not isAdmin():
+      return redirect("/login")
+  head,level,page =parse_content()
+  directory =render_menu(head,level,page)</pre>
+<p></p><br />WEEK1 << <a href='WEEK1.html'>Previous</a> <a href='WEEK3.html'>Next</a> >> WEEK3</section></div></body></html>
