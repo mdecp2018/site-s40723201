@@ -27,6 +27,8 @@
 <v t="leo.20181105105641.1"><vh>投影片1</vh>
 <v t="leo.20181105105641.2"><vh>封面投影片內容</vh></v>
 </v>
+<v t="leo.20181108112552.1" a="E"><vh>期中作業</vh>
+<v t="leo.20181108112552.2"><vh>封面投影片內容</vh></v>
 <v t="leo.20181108101314.1"><vh>week1</vh>
 <v t="leo.20181108101314.2"><vh>封面投影片內容</vh></v>
 </v>
@@ -50,6 +52,7 @@
 </v>
 <v t="leo.20181108101031.1" a="E"><vh>week8</vh>
 <v t="leo.20181108101031.2"><vh>封面投影片內容</vh></v>
+</v>
 </v>
 <v t="leo.20180827201621.11"><vh>快捷鍵</vh>
 <v t="leo.20180827201621.12"><vh>投影片快捷鍵</vh></v>
@@ -151,7 +154,7 @@ QLineEdit#editorLabel {
 <t tx="leo.20180827201556.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
 <t tx="leo.20180827201621.1"></t>
-<t tx="leo.20180827201621.10">## 2018Fall s40723201 網際簡報
+<t tx="leo.20180827201621.10">##  s40723201 網際簡報
 
 ### 虎科大機械設計工程系
 
@@ -159,9 +162,9 @@ vertical: body pane on the botton</t>
 Created by [KMOLab](http://lab.kmol.info/)
 &lt;/small&gt;
 
-[2018 Fall 分組網誌](./../blog/index.html)
+[*網站](https://mdecp2018.github.io/site-s40723201)
 
-
+[*網誌](https://mdecp2018.github.io/site-s40723201/blog)
 </t>
 <t tx="leo.20180827201621.11">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -488,5 +491,12 @@ make.start()
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/VLHqNCJkWUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 </t>
+<t tx="leo.20181108112552.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+
+
+</t>
+<t tx="leo.20181108112552.2">期中個人作業</t>
 </tnodes>
 </leo_file>
