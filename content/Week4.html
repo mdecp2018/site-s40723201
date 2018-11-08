@@ -1,107 +1,78 @@
-<h1>簡介</h1>
-<p>2018 Fall 計算機程式與電腦輔助設計實習課程分組網站</p>
-<h2>CMSimfly 網站</h2>
-<p>各組必須自行更改 Config 中的網站標題, 且每次完成近端動態網頁編輯後, 以 generate_pages 按鈕, 將動態網頁資料轉為靜態網頁資料, 之後再新增、提交並推送到遠端倉儲.</p>
-<h2>reveal 投影片</h2>
-<p>以 <a href="http://www.leoeditor.com/">Leo Editor</a> 開啟 config/reveal.leo</p>
-<h2>pelican 網誌</h2>
-<p>以 <a href="http://www.leoeditor.com/">Leo Editor</a> 開啟 config/pelican.leo </p>
-<p>各分組必須自行更改 @edit pelicanconf.py 中的 AUTHOR 與 SITENAME</p>
-<p>更改 @edit publishconf.py 中的 SITEURL</p>
-<h1>基本操作</h1>
-<p>● ”#”符號後是註解（comment），可以在一列的開頭或中間加入<br/>● reserved word or built-in function (變數取名請避開！)<br/>○     and, exec, not, as, finally, or, assert, for, pass, except<br/>○     break, from, print, class, global, raise, continue, if, return<br/>○     def, import, try, del, in, while, elif, is, with, else, lambda, yield<br/>● 縮排視為不同的block (在IF判斷式或迴圈的段落中使用)<br/>○     縮排可以用tab或是數個空格(至少一個空格)。<br/>○     空格的數量不同，視為不同的block (bug很容易因為這一點而發生)<br/>● python的每個變數視為一個object。</p>
-<p><span><strong>Python variables</strong></span></p>
-<p>● 不需要事先宣告變數，直接用”=“ assign value（賦值）即可。<br/>○     x=3.14 → 實數變數<br/>● 變數類型（data type）根據被賦予的值決定（之後如果被assign不同類型的數<br/>值，該變數的類型就會直接改變）<br/>○     x=‘text’ → 字串變數<br/>● 確認變數的data type: type(x)<br/>● 變數名稱中的大小寫要完全一致（a、A會當作不同的變數）<br/>● python可以在同一個指令中對多個變數賦值<br/>○     x, y = 2, 1 → x = 2, y = 1<br/>● 若想要移除變數，使用del x y<br/>● 常見的data type: number, string, list, tuple, boolean</p>
-<p><span><strong>Simple input/output</strong></span></p>
-<p>● input(“…”) 在螢幕上顯示字串，並等待使用者輸入字串<br/>○     x = input (“input your name: “)  螢幕上會顯示訊息 input your name:，<br/>       使用者輸入的內容，會用字串類型存到x變數<br/>○    就算使用者輸入數字，仍然是以字串類型儲存（之後會介紹如何切割字串<br/>     （split），轉為數值）<br/>● print (...) 顯示在螢幕上<br/>○     e.g. print (“Hello World!!”)<br/>○     若要一次輸出多個變數至螢幕上，直接以逗號分開 e.g. print(x,y,z)<br/>○     也可以format output</p>
-<p><span><strong>Python variable types</strong></span></p>
-<p>● Number 數值<br/>○     int : a = 11<br/>○     float: a = 1.1e-18<br/>○     complex: a = 4. + 7j<br/>● String 字串 （ 用“ “ 或 ‘ ‘夾起）<br/>○     e.g. x = “Hello World!” or x = ‘Hello World!’<br/>○     取出字串的局部：x [0:3]<br/>■         注意：index 從 0 開始計算！<br/>■         [a:b] -- begin at index a and end before index b (e.g., x[0:3] -&gt; “Hel”)<br/>○     不可以對字串的局部做更改，e.g. x[0:3] =”Yo!” (這個是錯誤的語法)<br/>● Boolean 邏輯<br/>○     只有True, False兩種值，根據邏輯判斷（IF condition）的結果決定<br/>○     兩個boolean 變數做運算，會以True=1, False=0 做整數運算</p>
-<p><span><strong>Python variables: list and tuple</strong></span></p>
-<p>● list, tuple<br/>○     類似陣列的概念，但可以混雜儲存不同型態的資料，如下所示<br/>○     List： x = [ 'abcd', 786 , 2.23, 'john', 70.2]<br/>○     Tuple: y = ( 'abcd', 786 , 2.23, 'john', 70.2)<br/>○     assignment: list 使用 [], tuple 使用(), 每個元素都用”，”分開<br/>○     list 的大小及元素可以改變。tuple則不行 (類似常數陣列)<br/>○     sub-list 或是 sub-tuple語法類似取出字串局部：<br/>            x[0:2]  ['abcd', 786 ]<br/>            y[2:4]  (786, 2.23 )</p>
-<p><span><strong>Convert data type</strong></span></p>
-<p>有時候需要不同型態的資料轉換，例如將字串”10”轉成整數10<br/>下列為常用的built-in function<br/>● int (x)<br/>● float (x)<br/>● str (x)</p>
-<p><span><strong>Arithmetic Operators</strong></span></p>
-<p>● 加法 +<br/>○     string 相加：形成新的字串                              ● 次方 **<br/>■         x = “Hello”, y = “World”                                ● 取餘數 %<br/>■         c = x + y → c = “HelloWorld”                        ● 整除至最近整數 //<br/>● 減法 -                                                                      ○相除後取最接近的整數(整實數)，<br/>● 乘法 *                                                                      結果的類型取決於兩個變數的類型：<br/>○     string 乘一個數字(int)：字串重複幾次                       9//2 = 4<br/>■         x = “Yo!”                                                                    9.0//2.0 = 4.0<br/>■         y = x * 3 → y = “Yo!Yo!Yo!”                                    11.0//3 = 4.0<br/>● 除法 /<br/>○     注意：兩個整數相除，結果是實數<br/>■         x = 21, y = 10<br/>■         c = x / y → c = 2.1</p>
-<p><strong><span>Arithmetic Operators</span></strong></p>
-<p>● 如果要進行下面的運算 a= a+b （用a+b的結果為a重新賦值）<br/>● 在python可以改寫成： a += b<br/>● 所以算術運算符號可以有<br/>        +=     -=     *=     /=     %=     **=     //=</p>
-<p><span><strong>Modules or package （也稱為library）</strong></span></p>
-<p>● ”modules” or “packages”：通常是其他人寫好的函數或指令，打包成一個「工具庫」<br/> 方便分享使用。（非python內建，可能會需要下載安裝）<br/>○     本課程會用到的library: numpy (array), matplotlib (基本繪圖), basemap (地圖),<br/>         netCDF (讀nc檔)<br/>● 使用方式：import module_name<br/>○     在執行工具庫內的指令之前，就要先把modules 引進來（不然python不會認得<br/>        非內建的指令）<br/>○     使用工具庫內的指令：module_name.function (or module_name.constant)<br/>○     可以使用import module_name as xxx (xxx是你自己取的縮寫）<br/>        使用指令的語法就簡化成xxx.function，例如:<br/>             import math as m<br/>             x=m.cos(m.pi)</p>
-<h1>期中作業操作</h1>
-<h2>Week1</h2>
+<!doctype html>
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>CMSimfly</title> <link rel="stylesheet" type="text/css" href="./../static/cmsimply.css">
+
+<script type="text/javascript" src="./../static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCSharp.js"></script>
+<link type="text/css" rel="stylesheet" href="./../static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- for LaTeX equations 暫時不用
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+-->
+<!-- 暫時不用
+<script src="./../static/fengari-web.js"></script>
+<script type="text/javascript" src="./../static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img {
+  border: 3px solid red:
+}
+</style>
+
+<script src="./../static/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("ul.topmenu> li:has(ul) > a").append('<div class="arrow-right"></div>');
+    $("ul.topmenu > li ul li:has(ul) > a").append('<div class="arrow-right"></div>');
+});
+</script>
+
+</head><header><h1>s40723201分組網站</h1> <confmenu>
 <ul>
-<li><span>建立github帳號</span></li>
-<li><span>建立倉儲</span></li>
-<li><span>git clone  https://github.com/mdecourse/2018fall</span></li>
-<li><span>git clone  https://github.com/s40723201/s40723201.github.io</span></li>
-<li><span>從2018fall複製所有檔案（除了git）至s40723201</span></li>
-<li><span>git status(檢查狀態) &gt; git add .(增加) &gt; git commit -m " 名稱 "( 提交)&gt;git push (推送)</span><span></span></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="sitemap.html">Site Map</a></li>
+<li><a href="./../reveal/index.html">reveal</a></li>
+<li><a href="./../blog/index.html">blog</a></li>
+
 </ul>
-<p>※隨身系統Y槽&gt;home中的gitconfig丟置SciTE查看身分，是否為自己的</p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/VLHqNCJkWUE" width="560"></iframe></p>
-<p style="text-align: center;"><strong></strong></p>
-<h2 style="text-align: left;">Week2</h2>
-<p style="text-align: center;"><strong>本周在領取個人作業及下載"Share X"、"Zoomit"</strong></p>
-<p><img alt="" height="354" src="/images/ZoomIt64_2018-10-29_22-31-33.png" width="630"/></p>
-<ul>
-<li>至2018fall&gt;week1 領取個人作業</li>
-</ul>
-<p><img alt="" height="354" src="/images/2018-10-29_22-18-05.png" width="630"/></p>
-<ul>
-<li>此為領取完畢的畫面</li>
-</ul>
-<p style="text-align: right;">接下來跟WEEK1一樣的步驟，將期中作業倉儲 git clone至tmp裡進行管理</p>
-<p style="text-align: left;"></p>
-<p style="text-align: left;"><img alt="" height="338" src="/images/chrome_2018-10-29_22-15-48.png" width="630"/></p>
-<ul>
-<li>至瀏覽器搜尋 "Share X"</li>
-</ul>
-<p><img alt="" height="354" src="/images/ZoomIt64_2018-10-29_22-39-45.png" width="630"/></p>
-<ul>
-<li>按"Doenload"下載"Share X"</li>
-</ul>
-<p></p>
-<p><img alt="" height="354" src="/images/ZoomIt64_2018-10-29_22-43-34.png" width="630"/></p>
-<ul>
-<li>打開"Share X"，此為"Share X"的介面，按"Hotkey settings"</li>
-</ul>
-<p><img alt="" height="324" src="/images/chrome_2018-10-29_22-17-06.png" width="630"/></p>
-<ul>
-<li>可以更改快捷鍵。</li>
-</ul>
-<p style="text-align: right;">Capture region ( 截圖 ) 、Start/Stop screen recording ( 開始 / 結束 錄影 )</p>
-<p><img alt="" height="338" src="/images/chrome_2018-10-29_22-20-32.png" width="630"/></p>
-<p></p>
-<ul>
-<li>至瀏覽器搜尋"Zoomit"</li>
-</ul>
-<p><img alt="" height="354" src="/images/ZoomIt64_2018-10-29_22-51-29.png" width="630"/></p>
-<ul>
-<li>按"Download Zoomit"下載程式</li>
-</ul>
-<p></p>
-<p></p>
-<p></p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">@app.route('/delete_file'.methods=['POST'])
-def delete_file():
-  """Dekete user uploaded files."""
-  if not isAdmin():
-      return redirect("/login")
-  head,level,page =parse_content()
-  directory =render_menu(head,level,page)</pre>
-<p></p>
-<h2>Week3</h2>
-<ul>
-<ul>
-<li>利用cmd創立一個資料夾</li>
-<li>在SciTE自行輸入文字進行存檔</li>
-<li>利用git branch dev創立分支"dev"</li>
-<li>再次輸入文字進行存檔</li>
-<li>最後輸入文字進行存檔</li>
-<li>利用git log 查看目前的指標位置</li>
-<li>利用git checkout 切換存檔紀錄<iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/HUGZFHoXXMw" width="560"></iframe></li>
-</ul>
-</ul>
-<h2>Week4</h2>
+</confmenu></header>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><li><a href='簡介.html'>簡介</a><ul><li><a href='CMSimfly 網站.html'>CMSimfly 網站</a><li><a href='reveal 投影片.html'>reveal 投影片</a><li><a href='pelican 網誌.html'>pelican 網誌</a></li></ul><li><a href='基本操作.html'>基本操作</a><li><a href='期中作業操作.html'>期中作業操作</a><ul><li><a href='Week1.html'>Week1</a><li><a href='Week2.html'>Week2</a><li><a href='Week3.html'>Week3</a><li><a href='Week4.html'>Week4</a><li><a href='Week5.html'>Week5</a><li><a href='Week6.html'>Week6</a><li><a href='Week7.html'>Week7</a><li><a href='Week8.html'>Week8</a></li></ul><li><a href='組員操作影片.html'>組員操作影片</a><ul><li><a href='老師示範.html'>老師示範</a></li></ul><li><a href='Python 手冊.html'>Python 手冊</a><li><a href='OnShape 手冊.html'>OnShape 手冊</a><li><a href='Fusion 360.html'>Fusion 360</a></li></ul></nav><section>Week3 << <a href='Week3.html'>Previous</a> <a href='Week5.html'>Next</a> >> Week5<br /><h1>Week4</h1>
 <ul>
 <ul>
 <ul>
@@ -112,7 +83,7 @@ def delete_file():
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/SDGU7PaKIGI" width="560"></iframe></p>
 <p>-</p>
 <p style="text-align: center;"><span style="color: #ff0000;"><strong>遇到的問題！！！！！</strong></span></p>
-<p style="text-align: center;"><span style="color: #ff0000;"><strong><img alt="" height="747" src="/images/45539875_2038828759537711_3949233136025468928_n.jpg" width="560"/></strong></span></p>
+<p style="text-align: center;"><span style="color: #ff0000;"><strong><img alt="" height="747" src="./../images/45539875_2038828759537711_3949233136025468928_n.jpg" width="560"/></strong></span></p>
 <p><span style="color: #000000;">在編輯WEEK4&gt;generate_pages後</span></p>
 <p><span style="color: #000000;">我的遠端出現這個畫面，並且怎麼重新啟動都一樣</span></p>
 <p><span style="color: #000000;"><span style="color: #000000;">同班同學剛好看到，用手機軟體傳訊息，以截圖程式碼幫我看了一下</span></span></p>
@@ -125,37 +96,4 @@ def delete_file():
 <p>發現WEEK4的程式碼不太對勁</p>
 <p>並要我刪除WEEK4多餘的程式碼&gt;save</p>
 <p>重新開啟遠端就好了，雖然剛上傳的東西都不見，但至少救回我的遠端</p>
-<h2>Week5</h2>
-<h2>Week6</h2>
-<p style="text-align: center;"><strong>更新flaskapp.py</strong></p>
-<p style="text-align: center;"><strong></strong></p>
-<p style="text-align: center;"><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/jf2gVmjz8_Y" width="560"></iframe></p>
-<h2>Week7</h2>
-<p style="text-align: center;"><strong>更改圖片圖框顏色</strong></p>
-<ul>
-<li style="text-align: left;">開啟遠端</li>
-<li style="text-align: left;">在圖片下面新增程式碼</li>
-</ul>
-<p><img alt="" height="158" src="/images/notepad_2018-11-06_23-57-38.png" width="458"/></p>
-<ul>
-<li style="text-align: left;">利用LEO 開啟 cmsimfy.leo</li>
-<li style="text-align: left;">下滑找到 syntaxhighlight 點選並滑到最下面新增程式碼</li>
-<li style="text-align: left;">最後一定要save 並 git push</li>
-</ul>
-<p></p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/_hGc7rjQDnA" width="560"></iframe></p>
-<h2>Week8</h2>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Xd7YflKRkrs" width="560"></iframe></p>
-<h1>組員操作影片</h1>
-<p>每週各分組組員必須將參與分組協同過程之電腦操作流程錄成影片後, 上傳至各自的 Youtube 帳號區, 並嵌入各分組網站頁面中.</p>
-<h2>老師示範</h2>
-<p><span>國立虎尾科技大學機械設計工程系計算機程式 - 一乙第八週第三部分, 說明如何利用 Eric6 IDE 建立所需的 calculator 計算機程式對話表單. 過程中主要學習如何啟動 Eric6, 如何建立 Eric6 專案, 如何切換 Sources tab 與 Form tab, 如何在進入 Qt Designer 後利用格點布局, 建立按鈕與 Line Edit 部件.</span></p>
-<p><iframe allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/g4ksXq7sQ4M" width="560"></iframe></p>
-<h1>Python 手冊</h1>
-<p>計算機程式教材:  <a href="http://mde.tw/cp2018/content/">http://mde.tw/cp2018/content/</a> </p>
-<p>可攜程式下載: <a href="https://drive.google.com/file/d/1DWtyoUhl8CycKJ8uulB3viRXE39KqpE1/view?usp=sharing">p37.7z</a></p>
-<h1>OnShape 手冊</h1>
-<p><a href="https://www.onshape.com/">https://www.onshape.com/</a> </p>
-<p>電腦輔助設計實習課程教材: <a href="http://mde.tw/cadp2018/content/">http://mde.tw/cadp2018/content/</a> </p>
-<h1>Fusion 360</h1>
-<p><a href="https://www.autodesk.com/products/fusion-360/students-teachers-educators">https://www.autodesk.com/products/fusion-360/students-teachers-educators</a> </p>
+<br />Week3 << <a href='Week3.html'>Previous</a> <a href='Week5.html'>Next</a> >> Week5</section></div></body></html>
