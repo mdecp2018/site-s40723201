@@ -21,17 +21,35 @@
 <v t="leo.20180827201621.6" a="E"><vh>body</vh>
 <v t="leo.20180827201621.7" a="E"><vh>reveal div</vh>
 <v t="leo.20180827201621.8" a="E"><vh>slides div</vh>
-<v t="leo.20181105105641.1" a="E"><vh>投影片1</vh>
-<v t="leo.20181105105641.2"><vh>封面投影片內容</vh></v>
-</v>
-<v t="leo.20181105013733.1" a="E"><vh>封面投影片</vh>
-<v t="leo.20181105013733.2"><vh>封面投影片內容</vh></v>
-</v>
-<v t="leo.20180827201621.9" a="E"><vh>封面投影片</vh>
+<v t="leo.20180827201621.9"><vh>封面投影片</vh>
 <v t="leo.20180827201621.10"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20181105013708.1" a="E"><vh>快捷鍵</vh>
-<v t="leo.20181105013708.2"><vh>投影片快捷鍵</vh></v>
+<v t="leo.20181105105641.1"><vh>投影片1</vh>
+<v t="leo.20181105105641.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20181108101314.1"><vh>week1</vh>
+<v t="leo.20181108101314.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20181108101039.1"><vh>week2</vh>
+<v t="leo.20181108101039.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20181108101037.1"><vh>week3</vh>
+<v t="leo.20181108101037.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20181108101036.1"><vh>week4</vh>
+<v t="leo.20181108101036.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20181108101033.1"><vh>week5</vh>
+<v t="leo.20181108101033.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20181108101034.1"><vh>week6</vh>
+<v t="leo.20181108101034.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20181108101044.1"><vh>week7</vh>
+<v t="leo.20181108101044.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20181108101031.1"><vh>week8</vh>
+<v t="leo.20181108101031.2"><vh>封面投影片內容</vh></v>
 </v>
 <v t="leo.20180827201621.11" a="E"><vh>快捷鍵</vh>
 <v t="leo.20180827201621.12"><vh>投影片快捷鍵</vh></v>
@@ -335,39 +353,6 @@ make.start()
 
 						
 </t>
-<t tx="leo.20181105013708.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20181105013708.2"># 投影片快捷鍵
-
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
-
-</t>
-<t tx="leo.20181105013733.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20181105013733.2"># WEEK1
-
-##
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/VLHqNCJkWUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20181105105641.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -382,6 +367,131 @@ make.start()
 [*CMsimfiy 操作](https://github.com/chiamingyen/cmsimfly)
 
 [*Onshape 操作](https://www.onshape.com)
+
+</t>
+<t tx="leo.20181108101031.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20181108101031.2">## MCAD 2a W4 網際簡報
+
+[*CMsimfiy 操作](https://github.com/chiamingyen/cmsimfly)
+
+[*Onshape 操作](https://www.onshape.com)
+
+</t>
+<t tx="leo.20181108101033.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20181108101033.2">## MCAD 2a W4 網際簡報
+
+[*CMsimfiy 操作](https://github.com/chiamingyen/cmsimfly)
+
+[*Onshape 操作](https://www.onshape.com)
+
+</t>
+<t tx="leo.20181108101034.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20181108101034.2">## MCAD 2a W4 網際簡報
+
+[*CMsimfiy 操作](https://github.com/chiamingyen/cmsimfly)
+
+[*Onshape 操作](https://www.onshape.com)
+
+</t>
+<t tx="leo.20181108101036.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20181108101036.2">## MCAD 2a W4 網際簡報
+
+[*CMsimfiy 操作](https://github.com/chiamingyen/cmsimfly)
+
+[*Onshape 操作](https://www.onshape.com)
+
+</t>
+<t tx="leo.20181108101037.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20181108101037.2">## MCAD 2a W4 網際簡報
+
+[*CMsimfiy 操作](https://github.com/chiamingyen/cmsimfly)
+
+[*Onshape 操作](https://www.onshape.com)
+
+</t>
+<t tx="leo.20181108101039.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20181108101039.2">## MCAD 2a W4 網際簡報
+
+[*CMsimfiy 操作](https://github.com/chiamingyen/cmsimfly)
+
+[*Onshape 操作](https://www.onshape.com)
+
+</t>
+<t tx="leo.20181108101044.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20181108101044.2">## MCAD 2a W4 網際簡報
+
+[*CMsimfiy 操作](https://github.com/chiamingyen/cmsimfly)
+
+[*Onshape 操作](https://www.onshape.com)
+
+</t>
+<t tx="leo.20181108101314.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20181108101314.2">## WEEK1
+
 
 </t>
 </tnodes>
