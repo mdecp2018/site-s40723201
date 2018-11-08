@@ -27,13 +27,13 @@
 <v t="leo.20181105105641.1"><vh>投影片1</vh>
 <v t="leo.20181105105641.2"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20181108101314.1" a="E"><vh>week1</vh>
+<v t="leo.20181108101314.1"><vh>week1</vh>
 <v t="leo.20181108101314.2"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20181108101039.1" a="E"><vh>week2</vh>
+<v t="leo.20181108101039.1"><vh>week2</vh>
 <v t="leo.20181108101039.2"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20181108101037.1"><vh>week3</vh>
+<v t="leo.20181108101037.1" a="E"><vh>week3</vh>
 <v t="leo.20181108101037.2"><vh>封面投影片內容</vh></v>
 </v>
 <v t="leo.20181108101036.1"><vh>week4</vh>
@@ -442,12 +442,11 @@ make.start()
 
 						
 </t>
-<t tx="leo.20181108101037.2">## MCAD 2a W4 網際簡報
+<t tx="leo.20181108101037.2"># WEEK3
 
-[*CMsimfiy 操作](https://github.com/chiamingyen/cmsimfly)
+## 練習切換分支
 
-[*Onshape 操作](https://www.onshape.com)
-
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/HUGZFHoXXMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 </t>
 <t tx="leo.20181108101039.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
