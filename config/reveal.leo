@@ -42,19 +42,19 @@
 <v t="leo.20181108101033.1"><vh>week5</vh>
 <v t="leo.20181108101033.2"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20181108101034.1" a="E"><vh>week6</vh>
+<v t="leo.20181108101034.1"><vh>week6</vh>
 <v t="leo.20181108101034.2"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20181108101044.1"><vh>week7</vh>
+<v t="leo.20181108101044.1" a="E"><vh>week7</vh>
 <v t="leo.20181108101044.2"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20181108101031.1"><vh>week8</vh>
+<v t="leo.20181108101031.1" a="E"><vh>week8</vh>
 <v t="leo.20181108101031.2"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20180827201621.11" a="E"><vh>快捷鍵</vh>
+<v t="leo.20180827201621.11"><vh>快捷鍵</vh>
 <v t="leo.20180827201621.12"><vh>投影片快捷鍵</vh></v>
 </v>
-<v t="leo.20180827201621.13" a="E"><vh>各式內容引用範例</vh>
+<v t="leo.20180827201621.13"><vh>各式內容引用範例</vh>
 <v t="leo.20180827201621.14" a="E"><vh>導入數學符號與方程式</vh>
 <v t="leo.20180827201621.15"><vh>LaTeX 格式方程式</vh></v>
 </v>
@@ -378,12 +378,11 @@ make.start()
 
 						
 </t>
-<t tx="leo.20181108101031.2">## MCAD 2a W4 網際簡報
+<t tx="leo.20181108101031.2"># WEEK8
 
-[*CMsimfiy 操作](https://github.com/chiamingyen/cmsimfly)
+## 如何新增投影片在reveal
 
-[*Onshape 操作](https://www.onshape.com)
-
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/_hGc7rjQDnA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 </t>
 <t tx="leo.20181108101033.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -468,12 +467,11 @@ make.start()
 
 						
 </t>
-<t tx="leo.20181108101044.2">## MCAD 2a W4 網際簡報
+<t tx="leo.20181108101044.2"># WEEK7
 
-[*CMsimfiy 操作](https://github.com/chiamingyen/cmsimfly)
+## 更改圖框顏色
 
-[*Onshape 操作](https://www.onshape.com)
-
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/_hGc7rjQDnA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 </t>
 <t tx="leo.20181108101314.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
