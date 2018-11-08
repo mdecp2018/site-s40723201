@@ -30,7 +30,7 @@
 <v t="leo.20181108101314.1" a="E"><vh>week1</vh>
 <v t="leo.20181108101314.2"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20181108101039.1"><vh>week2</vh>
+<v t="leo.20181108101039.1" a="E"><vh>week2</vh>
 <v t="leo.20181108101039.2"><vh>封面投影片內容</vh></v>
 </v>
 <v t="leo.20181108101037.1"><vh>week3</vh>
@@ -458,12 +458,9 @@ make.start()
 
 						
 </t>
-<t tx="leo.20181108101039.2">## MCAD 2a W4 網際簡報
+<t tx="leo.20181108101039.2"># week2
 
-[*CMsimfiy 操作](https://github.com/chiamingyen/cmsimfly)
-
-[*Onshape 操作](https://www.onshape.com)
-
+## 領取個人作業
 </t>
 <t tx="leo.20181108101044.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -490,9 +487,9 @@ make.start()
 
 						
 </t>
-<t tx="leo.20181108101314.2">## WEEK1
+<t tx="leo.20181108101314.2"># WEEK1
 
-# 建立個人課程網頁 
+## 建立個人課程網頁 
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/VLHqNCJkWUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 </t>
